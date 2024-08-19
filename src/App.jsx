@@ -5,7 +5,9 @@ import MailboxList from './components/MailboxList';
 import MailboxDetails from './components/MailboxDetails';
 
 const App = () => {
-  return <h1>Hello world!</h1>;
+  return (
+    <NavBar />
+  );
 };
 
 export default App;

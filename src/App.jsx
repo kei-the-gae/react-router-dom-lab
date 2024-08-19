@@ -9,7 +9,10 @@ const App = () => {
   const [mailboxes, setMailboxes] = useState([]);
 
   const addMailbox = (newMailboxData) => {
-
+    newMailboxData._id = mailboxes.length + 1;
+    setMailboxes([...mailboxes, newMailboxData]);
+    console.log(newMailboxData);
+    console.log(mailboxes);
   };
 
   return (

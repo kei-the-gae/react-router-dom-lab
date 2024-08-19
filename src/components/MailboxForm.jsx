@@ -14,7 +14,6 @@ const MailboxForm = ({ addMailbox }) => {
     const handleSubmit = (e) => {
         e.preventDefault();
         addMailbox(formData);
-        console.log(formData);
         setFormData(initialState);
         navigate('/mailboxes');
     };

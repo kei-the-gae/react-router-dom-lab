@@ -6,6 +6,8 @@ import MailboxList from './components/MailboxList';
 import MailboxDetails from './components/MailboxDetails';
 
 const App = () => {
+  const [mailboxes, setMailboxes] = useState([]);
+
   return (
     <>
       <NavBar />

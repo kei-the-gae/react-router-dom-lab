@@ -22,7 +22,7 @@ const MailboxForm = ({ addMailbox }) => {
 
     return (
         <main>
-            <h2>New Mailbox</h2>
+            <h1>New Mailbox</h1>
             <form onSubmit={handleSubmit}>
                 <label htmlFor="boxholder">Boxholder: </label>
                 <input type="text" name="boxholder" id="boxholder" value={formData.boxholder} onChange={handleChange} />

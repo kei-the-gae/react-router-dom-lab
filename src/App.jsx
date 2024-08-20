@@ -11,8 +11,6 @@ const App = () => {
   const addMailbox = (newMailboxData) => {
     newMailboxData._id = mailboxes.length + 1;
     setMailboxes([...mailboxes, newMailboxData]);
-    console.log(newMailboxData);
-    console.log(mailboxes);
   };
 
   return (
@@ -20,7 +18,7 @@ const App = () => {
       <NavBar />
       <Routes>
         <Route path='/' element={<main><h1>Post Office</h1></main>} />
-        <Route path='/mailboxes' element={<MailboxList />} />
+        <Route path='/mailboxes' element={<MailboxList mailboxes={mailboxes} />} />
         <Route path='/new-mailbox' element={<MailboxForm addMailbox={addMailbox} />} />
         <Route path='/mailboxes/:mailboxId' element={<MailboxDetails />} />
         <Route path='*' element={<h2>Whoops, nothing here!</h2>} />
